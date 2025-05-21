@@ -1,42 +1,110 @@
+html {
+  scroll-behavior: smooth;
+}
+h1,
+p {
+  text-align: center;
+}
+/* @keyframes flow {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+} */
 header {
-  background-color: black;
   width: 100%;
   display: flex;
   justify-content: space-between;
   position: fixed;
-  color: white;
+  color: rgb(0, 0, 0, 0.8);
 }
 header h1 {
   font-size: 3rem;
   margin-block: 5px;
 }
 header nav {
-  /* background-color: blue; */
   display: flex;
-  /* gap: 20px; */
 
-  width: 300px;
+  width: 500px;
 }
 header nav a {
-  /* background-color: black; */
   display: flex;
+  font-size: 1.5rem;
   align-items: center;
   justify-content: center;
-  /* border: 2px solid; */
-  flex-basis: 300px;
+  flex-basis: 400px;
+  transition-duration: 0.5s;
 }
 header nav a:hover {
-  background-color: white;
+  font-size: 1.8rem;
   color: black;
+  font-weight: bold;
 }
 
 .content {
   height: 100vh;
   display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background: linear-gradient(#e3fdfd, #7ae2cf, #e3fdfd);
 }
-#open-page {
-  background-color: aqua;
+/* .content h1,
+.content p {
+  background-color: burlywood;
+} */
+.content h1 {
+  font-size: 5rem;
+  font-weight: bold;
 }
-#myskill {
-  background-color: blue;
+.content p {
+  font-size: 1.5rem;
+  white-space: nowrap;
+  overflow: hidden;
+  /* animation: flow 2s infinite; */
+}
+
+#profile {
+  flex-direction: row;
+  align-items: center;
+}
+#name {
+  padding-bottom: 70px;
+}
+#name h2 {
+  text-align: center;
+  font-size: 3rem;
+}
+#profile-photo {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background-size: cover;
+  margin-bottom: 15px;
+}
+.info {
+  padding-block: 10px;
+  font-size: 2rem;
+  line-height: 2.5rem;
+  border-top: 3px solid black;
+}
+.next-button {
+  --s: 10px;
+
+  height: 60px;
+  aspect-ratio: 3/5;
+  clip-path: polygon(
+    0 0,
+    var(--s) 0,
+    100% 50%,
+    var(--s) 100%,
+    0 100%,
+    calc(100% - var(--s)) 50%
+  );
+  background: rgb(0, 0, 0, 0.6);
+}
+
+.next-button:hover {
+  background: rgb(0, 0, 0, 1);
 }
