@@ -1,0 +1,42 @@
+header {
+  background-color: black;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  color: white;
+}
+header h1 {
+  font-size: 3rem;
+  margin-block: 5px;
+}
+header nav {
+  /* background-color: blue; */
+  display: flex;
+  /* gap: 20px; */
+
+  width: 300px;
+}
+header nav a {
+  /* background-color: black; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* border: 2px solid; */
+  flex-basis: 300px;
+}
+header nav a:hover {
+  background-color: white;
+  color: black;
+}
+
+.content {
+  height: 100vh;
+  display: flex;
+}
+#open-page {
+  background-color: aqua;
+}
+#myskill {
+  background-color: blue;
+}
