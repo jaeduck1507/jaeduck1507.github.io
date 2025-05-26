@@ -113,16 +113,20 @@ header nav a:hover {
 }
 #skill-list {
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
+  gap: 35px;
 }
 .stack {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 550px;
-  width: 350px;
-  border: 2px solid;
+  gap: 10px;
+  height: 600px;
+  width: 450px;
+  background-color: white;
+  /* border: 2px solid; */
   box-sizing: border-box;
+  box-shadow: 6px 6px 5px black;
 }
 .stack h2 {
   width: 200px;
@@ -130,6 +134,22 @@ header nav a:hover {
   font-size: 30px;
   border-bottom: 3px solid rgb(0, 0, 0, 0.7);
   padding-bottom: 5px;
+}
+
+#my-project {
+  flex-direction: row;
+  align-items: center;
+}
+.pj {
+  display: flex;
+  align-items: center;
+  background-color: rebeccapurple;
+}
+.pbox {
+  width: 20vw;
+  height: 60vh;
+  box-sizing: border-box;
+  border: 2px solid;
 }
 
 aside {
