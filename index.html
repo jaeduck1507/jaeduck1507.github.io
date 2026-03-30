@@ -1,155 +1,194 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="ko">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>포토폴리오</title>
-    <link rel="stylesheet" href="reset.css" />
+    <title>오재덕 포트폴리오</title>
     <link rel="stylesheet" href="index.css" />
+    <script defer src="index.js"></script>
   </head>
   <body>
-    <header>
-      <h1>이름이름</h1>
-      <nav>
-        <a href="#profile" class="container" id="aboutme">About Me</a>
-        <a href="#myskill" class="container" id="skill">Skill</a>
-        <a href="#my-project" class="container" id="project">Project</a>
-      </nav>
-    </header>
-    <section class="content" id="open-page">
-      <h1>나중에 한마디로 소개할 말 추가</h1>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit
-        aliquid, eaque ratione id inventore, repudiandae provident voluptate
-        illo officia consequuntur, nisi eos sequi quod animi eius ducimus
-        blanditiis ipsa laudantium.
-      </p>
-    </section>
-
-    <section class="content" id="profile">
-      <article id="name">
-        <img src="assets/profile-photo.jpg" alt="" id="profile-photo" />
-        <h2>오재덕</h2>
-        <p>1998.07.08</p>
-      </article>
-
-      <section id="profile-content">
-        <article class="info" id="grade">
-          <h2>학력사항</h2>
-          <ul>
-            <li>- 보인고등학교 졸업 (2014.3 ~ 2017.02)</li>
-            <li>- 한국외국어대학교 졸업 (2017.03 ~ 2024.08)</li>
-          </ul>
-        </article>
-
-        <article class="info" id="edu">
-          <h2>교육이수</h2>
-          <ul>
-            <li>- kh정보교육원 과정 수강 (2025.05 ~ 2025.12)</li>
-          </ul>
-        </article>
-
-        <article class="info" id="license">
-          <h2>자격증 / 어학</h2>
-          <ul>
-            <li>- 정보처리기사 (2024.06.11)</li>
-            <li>- adsp (2024.06.11)</li>
-            <li>- opic im2 (2024.06.11)</li>
-          </ul>
-        </article>
-      </section>
-
-      <!-- <a href="#profile" class="next-button"></a> -->
-    </section>
-
-    <section class="content" id="myskill">
-      <section id="skill-list">
-        <article class="stack" id="Front">
-          <h2>Front-end</h2>
-          <div class="badge-container">
-            <div class="skill-item">
-              <div class="badge">
-                <img src="assets/html.svg" alt="HTML" />
-              </div>
-              <p>HTML</p>
-            </div>
-            <div class="skill-item">
-              <div class="badge">
-                <img src="assets/css.svg" alt="HTML" />
-              </div>
-              <p>CSS</p>
-            </div>
-            <div class="skill-item">
-              <div class="badge">
-                <img src="assets/js.svg" alt="HTML" />
-              </div>
-              <p>Java Script</p>
-            </div>
-            <div class="skill-item">
-              <div class="badge">
-                <img src="assets/react.svg" alt="HTML" />
-              </div>
-              <p>REACT</p>
-            </div>
-          </div>
-        </article>
-
-        <article class="stack" id="Back">
-          <h2>Back-end</h2>
-          <div class="badge-container">
-            <div class="skill-item">
-              <div class="badge">
-                <img src="assets/java.svg" alt="HTML" />
-              </div>
-              <p>JAVA</p>
-            </div>
-            <div class="skill-item">
-              <div class="badge">
-                <img src="assets/spring.svg" alt="HTML" />
-              </div>
-              <p>SPRING</p>
-            </div>
-            <div class="skill-item">
-              <div class="badge">
-                <img src="assets/js.svg" alt="HTML" />
-              </div>
-              <p>Java Script</p>
-            </div>
-            <div class="skill-item">
-              <div class="badge">
-                <img src="assets/react.svg" alt="HTML" />
-              </div>
-              <p>REACT</p>
-            </div>
-          </div>
-        </article>
-
-        <article class="stack" id="DB">
-          <h2>DB</h2>
-        </article>
-
-        <article class="stack" id="tools">
-          <h2>tools</h2>
-        </article>
-      </section>
-      <p>
-        기술스택으로 얻었던 내용
-        정리하기이이이이이이이이이이이이이이이이이이이이이이이이이이이이이이이이이이이이이이이이이이
-      </p>
-    </section>
-
-    <section class="content" id="my-project">
-      <div class="pj">
-        <div class="preview pbox">1</div>
-        <div class="project-content pbox">2</div>
-        <div class="project-nav pbox">3</div>
+    <header class="site-header">
+      <div class="header-inner">
+        <h1 class="logo">OJD Portfolio</h1>
+        <nav class="nav">
+          <a href="#about" class="nav-link">About</a>
+          <a href="#myskill" class="nav-link">Skills</a>
+          <a href="#my-project" class="nav-link">Projects</a>
+          <a href="#contact" class="nav-link">Contact</a>
+        </nav>
       </div>
-    </section>
+    </header>
 
-    <aside><a href="#">깃허브아이콘 넣기</a></aside>
+    <main>
+      <section id="open-page" class="hero">
+        <div class="hero-overlay">
+          <div class="hero-text">
+            <p class="eyebrow">WEB DEVELOPER PORTFOLIO</p>
+            <h2>문제를 구조적으로 해결하는 웹 개발자 오재덕입니다.</h2>
+            <p class="hero-desc">
+              Java, Spring, MyBatis, JavaScript를 기반으로 사용자 흐름과 데이터
+              구조를 함께 고민하며 웹 서비스를 구현했습니다.
+            </p>
+            <div class="hero-buttons">
+              <a href="#my-project" class="primary-btn">프로젝트 보기</a>
+              <a href="#contact" class="secondary-btn">연락하기</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="content section-block">
+        <div class="section-title-wrap">
+          <p class="section-label">ABOUT ME</p>
+          <h2>기술과 흐름을 함께 보는 개발자</h2>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-photo-card">
+            <img
+              src="assets/profile-photo.jpg"
+              alt="오재덕 프로필 사진"
+              class="profile-photo"
+            />
+          </div>
+
+          <div class="about-info-card">
+            <div class="info-group">
+              <h3>소개</h3>
+              <p>
+                백엔드 중심으로 웹 서비스를 구현하며, 화면에서 보이는 기능뿐
+                아니라 데이터 구조와 사용자 흐름까지 함께 고민하는 개발자입니다.
+              </p>
+            </div>
+
+            <div class="info-group">
+              <h3>강점</h3>
+              <ul>
+                <li>Spring 기반 인증/인가와 CRUD 중심 서비스 구현 경험</li>
+                <li>프로젝트 구조 설계와 데이터 흐름을 고려한 기능 개발</li>
+                <li>
+                  팀 프로젝트에서 일정 조율과 역할 분배를 수행한 협업 경험
+                </li>
+              </ul>
+            </div>
+
+            <div class="info-group">
+              <h3>학력 및 교육</h3>
+              <ul>
+                <li>한국외국어대학교 정보통신공학과</li>
+                <li>Java &amp; Spring 기반 웹개발 과정 수료</li>
+              </ul>
+            </div>
+
+            <div class="info-group">
+              <h3>자격 및 역량</h3>
+              <ul>
+                <li>정보처리기사</li>
+                <li>ADsP</li>
+                <li>웹 서비스 기획부터 구현까지의 팀 프로젝트 경험</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="myskill" class="content section-block">
+        <div class="section-title-wrap">
+          <p class="section-label">SKILLS</p>
+          <h2>실제로 사용해본 기술을 중심으로 정리했습니다.</h2>
+        </div>
+
+        <div class="skill-grid">
+          <article class="skill-card">
+            <h3>Frontend</h3>
+            <ul>
+              <li>
+                <strong>HTML5 / CSS3</strong> : 구조화된 마크업과 반응형 UI 구현
+              </li>
+              <li>
+                <strong>JavaScript</strong> : 이벤트 처리, DOM 제어, 비동기 흐름
+                구현
+              </li>
+              <li><strong>React</strong> : 컴포넌트 단위 화면 구성 경험</li>
+              <li>
+                <strong>jQuery</strong> : 기존 프로젝트 기반 동적 화면 처리 경험
+              </li>
+            </ul>
+          </article>
+
+          <article class="skill-card">
+            <h3>Backend</h3>
+            <ul>
+              <li>
+                <strong>Java</strong> : 객체지향 기반 웹 애플리케이션 구현
+              </li>
+              <li>
+                <strong>Spring / Spring Boot</strong> : MVC 구조와 REST API 구현
+              </li>
+              <li>
+                <strong>Spring Security</strong> : 로그인, 권한별 접근 제어 구현
+              </li>
+              <li><strong>MyBatis</strong> : Mapper 기반 DB 연동과 SQL 관리</li>
+            </ul>
+          </article>
+
+          <article class="skill-card">
+            <h3>Database</h3>
+            <ul>
+              <li>
+                <strong>MySQL</strong> : 테이블 설계, CRUD, 조건 검색 쿼리 작성
+              </li>
+              <li>
+                <strong>Oracle</strong> : 관계형 데이터베이스 기본 설계 및 활용
+              </li>
+            </ul>
+          </article>
+
+          <article class="skill-card">
+            <h3>Tools</h3>
+            <ul>
+              <li><strong>VS Code</strong> : 프론트엔드 및 마크업 작업</li>
+              <li>
+                <strong>Eclipse / STS3</strong> : Java, Spring 프로젝트 개발
+              </li>
+              <li>
+                <strong>IntelliJ</strong> : Spring Boot 기반 프로젝트 개발
+              </li>
+              <li><strong>Git / GitHub</strong> : 버전 관리 및 협업</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section id="my-project" class="content section-block">
+        <div class="section-title-wrap">
+          <p class="section-label">PROJECTS</p>
+          <h2>기획부터 구현, 문제 해결까지 경험한 프로젝트입니다.</h2>
+        </div>
+
+        <div class="pj">
+          <div class="pbox preview"></div>
+          <div class="pbox project-content"></div>
+          <div class="pbox project-screen"></div>
+          <div class="pbox project-nav"></div>
+        </div>
+      </section>
+
+      <section id="contact" class="content section-block">
+        <div class="section-title-wrap">
+          <p class="section-label">CONTACT</p>
+          <h2>함께 일할 기회를 기다리고 있습니다.</h2>
+        </div>
+
+        <div class="contact-card">
+          <p><strong>Email</strong> : your-email@example.com</p>
+          <p><strong>GitHub</strong> : https://github.com/jaeduck1507</p>
+          <p><strong>Blog / Notion</strong> : 필요 시 추가</p>
+        </div>
+      </section>
+    </main>
 
     <footer></footer>
-
-    <script src="index.js"></script>
   </body>
 </html>
