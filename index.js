@@ -61,6 +61,7 @@ document.addEventListener("DOMContentLoaded", () => {
         },
       ],
       github: "#",
+      pdf: "assets/Ctrl S 프로젝트 (1차 프로젝트).pdf",
     },
     {
       id: "space",
@@ -122,6 +123,7 @@ document.addEventListener("DOMContentLoaded", () => {
         },
       ],
       github: "#",
+      pdf: "assets/프로젝트2(2차 프로젝트).pdf",
     },
   ];
 
@@ -233,6 +235,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         <div class="project-link-wrap">
           <a href="${project.github}" target="_blank" class="project-link">GitHub 보기</a>
+          <a href="${project.pdf}" download class="project-link project-pdf-link">프로젝트 PDF 다운로드</a>
         </div>
       </div>
     `;
@@ -281,7 +284,7 @@ document.addEventListener("DOMContentLoaded", () => {
         ${projectData
           .map(
             (project, index) => `
-              <button class="project-tab-btn ${index === 0 ? "active" : ""}" data-index="${index}">
+              <button class="project-tab-btn ${index === currentProjectIndex ? "active" : ""}" data-index="${index}">
                 <span class="project-order">0${index + 1}</span>
                 <span class="project-tab-title">${project.shortTitle}</span>
               </button>
